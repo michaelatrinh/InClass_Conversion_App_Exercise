@@ -1,4 +1,7 @@
-const { celciusConvert, fahrenheitConvert } = require('./conversionOperations');
+const celciusConvert = require('./temperature/CtoF.js');
+const fahrenheitConvert = require('./temperature/FtoC.js');
 
-console.log(celciusConvert(0));
-console.log(fahrenheitConvert(0));
+module.exports = {
+  celciusConvert,
+  fahrenheitConvert
+}
