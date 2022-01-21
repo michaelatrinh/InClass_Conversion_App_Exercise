@@ -1,4 +1,4 @@
-const { celciusConvert, fahrenheitConvert, bmi, cadTohkd, hkdTocad} = require('./conversionOperations');
+const { celciusConvert, fahrenheitConvert, bmi, cadTohkd, hkdTocad, pound} = require('./conversionOperations');
 
 console.log(celciusConvert(0));
 console.log(fahrenheitConvert(0));
@@ -8,3 +8,5 @@ console.log(bmi(57,1.71))
 
 console.log(cadTohkd(6));
 console.log(hkdTocad(36));
+
+console.log(pound(10));
