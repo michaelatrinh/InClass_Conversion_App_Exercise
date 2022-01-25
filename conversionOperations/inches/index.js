@@ -1,5 +1,7 @@
-const length = require('./inches')
+const centimeters = require('./centimeters')
+const inches = require('./inches')
 
 module.exports = {
-    length
+    inches,
+    centimeters
 }
