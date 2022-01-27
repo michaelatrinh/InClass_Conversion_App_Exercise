@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 const testRouter = require('./routes/test');
 
+app.use(express.json());
 app.use(testRouter);
 app.listen(3001, () => console.log("Server running on 3001"));
 
