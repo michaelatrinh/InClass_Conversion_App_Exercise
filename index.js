@@ -1,5 +1,13 @@
 const { celciusConvert, fahrenheitConvert, bmi, cadTohkd, hkdTocad, pound, inches, centimeters} = require('./conversionOperations');
 
+const express = require('express');
+const app = express();
+const testRouter = require('./routes/test');
+
+app.use(testRouter);
+app.listen(3001, () => console.log("Server running on 3001"));
+
+
 console.log(celciusConvert(0));
 console.log(fahrenheitConvert(0));
 
