@@ -1,3 +1,6 @@
+var id = 1;
+var tests = [];
+
 const getTests = (req, res) => {
   res.json(tests)
 }
