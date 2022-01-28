@@ -1,5 +1,5 @@
-const hour_min = (hour, min) =>{
-    return min = hour * 60
+const hour_min = (hour) =>{
+    return Number(hour) * 60
 }
 
 module.exports = hour_min

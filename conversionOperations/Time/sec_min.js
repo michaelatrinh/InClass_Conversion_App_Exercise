@@ -1,5 +1,5 @@
-const sec_min = (sec, min, hour) =>{
-    return min = sec / 60
+const sec_min = (sec) =>{
+    return Number(sec) / 60
 }
 
 module.exports = sec_min

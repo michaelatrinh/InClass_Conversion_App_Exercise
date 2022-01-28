@@ -1,5 +1,5 @@
-const sec_hour = (sec, hour) =>{
-    return hour = sec / 360
+const sec_hour = (sec) =>{
+    return Number(sec) / 360
 }
 
 module.exports = sec_hour
