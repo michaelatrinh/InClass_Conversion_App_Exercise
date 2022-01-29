@@ -1,6 +1,6 @@
 //First input is weight in kg, 2nd input is height in meters.
 const bmi = (weightInKg,heightInM) => {
-    let cal = (weightInKg/(heightInM*heightInM)) 
+    let cal = (Number(weightInKg)/Number((heightInM*heightInM))) 
     if(cal < 16.0){
         return "Severely Underweight"
     }else if(cal >= 16.0 && cal <= 18.4){

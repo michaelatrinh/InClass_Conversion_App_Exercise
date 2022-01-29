@@ -1,8 +1,11 @@
+const { celciusConvert, fahrenheitConvert, bmi, cadTohkd, hkdTocad, pound, inches, centimeters} = require('../conversionOperations/index');
 var id = 1;
 var tests = [];
 
-const getTests = (req, res) => {
-  res.json(tests)
+const getBMI = (req, res) => {
+  console.log(req.query)
+  let q = req.query
+  res.send(bmi(q.kg,q.m))
 }
 
 const addNewTest = (req, res) => {
@@ -17,7 +20,7 @@ const searchTests = (req, res) => {
 }
 
 module.exports = {
-  getTests,
   addNewTest,
-  searchTests
+  searchTests,
+  getBMI
 }

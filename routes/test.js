@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const { getTests, addNewTest, searchTests } = require('../controller/test');
+const {getBMI, addNewTest, searchTests } = require('../controller/test');
 
-router.get('/test', getTests);
+router.get('/bmi', getBMI);
 
 router.post('/new/test', addNewTest);
 
