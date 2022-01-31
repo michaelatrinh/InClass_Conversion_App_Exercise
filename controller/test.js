@@ -33,6 +33,16 @@ const getInch = (req, res) => {
   res.send(inches(q.cm))
 }
 
+const getFahrenheit = (req, res) => {
+  var q = req.query;
+  res.send(celciusConvert(q.cel));
+}
+
+const getCelcius = (req, res) => {
+  var q = req.query;
+  res.send(fahrenheitConvert(q.fah));
+}
+
 const addNewTest = (req, res) => {
   const newTest = {...req.body, id: id++};
   tests.push(newTest);
@@ -53,4 +63,6 @@ module.exports = {
   getWeight,
   getCm,
   getInch,
+  getFahrenheit,
+  getCelcius
 }

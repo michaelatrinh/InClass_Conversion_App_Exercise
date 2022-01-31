@@ -9,6 +9,8 @@ const {
     getWeight,
     getCm,
     getInch,
+    getFahrenheit,
+    getCelcius
 } = require('../controller/test');
 
 router.get('/bmi', getBMI);
@@ -20,6 +22,10 @@ router.get('/inch', getInch);
 router.get('/cm', getCm);
 
 router.get('/pound', getWeight);
+
+router.get('/temperature/c', getFahrenheit);
+
+router.get('/temperature/f', getCelcius);
 
 router.post('/new/test', addNewTest);
 
